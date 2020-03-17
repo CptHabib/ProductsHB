@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Products_Managment.PL
+namespace ProductsHB.PL
 {
     public partial class FRM_MAIN : Form
     {

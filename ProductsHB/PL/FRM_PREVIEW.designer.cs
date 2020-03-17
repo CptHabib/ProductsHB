@@ -1,4 +1,4 @@
-﻿namespace Products_Managment.PL
+﻿namespace ProductsHB.PL
 {
     partial class FRM_PREVIEW
     {

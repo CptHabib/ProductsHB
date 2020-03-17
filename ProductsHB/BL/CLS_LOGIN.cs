@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using Products_Managment.BL;
+using ProductsHB.BL;
 
-namespace Products_Managment.BL
+namespace ProductsHB.BL
 {
     class CLS_LOGIN
     {

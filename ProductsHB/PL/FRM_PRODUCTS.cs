@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Products_Managment.PL
+namespace ProductsHB.PL
 {
     public partial class FRM_PRODUCTS : Form
     {
