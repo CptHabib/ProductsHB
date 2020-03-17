@@ -30,20 +30,20 @@ namespace ProductsHB.PL
             DataTable Dt = log.LOGIN(textID.Text, textPWD.Text);
                 if (Dt.Rows.Count>0)
                 {
-                    MessageBox.Show("Log");
-                    /*FRM_MAIN.getMainForm.المنتوجاتToolStripMenuItem.Enabled = true;
+                   
+                    FRM_MAIN.getMainForm.المنتوجاتToolStripMenuItem.Enabled = true;
                     FRM_MAIN.getMainForm.العملاءToolStripMenuItem.Enabled = true;
                     FRM_MAIN.getMainForm.المستخدمينToolStripMenuItem.Enabled = true;
                     FRM_MAIN.getMainForm.إنشاءنسخةاحتياطيةToolStripMenuItem.Enabled = true;
                     FRM_MAIN.getMainForm.استعادةنسخةمحفوظةToolStripMenuItem.Enabled = true;
-                    this.Close();*/
+                    this.Close();
                 
                 
                 
                 }
                 else
                 {
-                    MessageBox.Show("Login Failed !");
+                    MessageBox.Show("!تسجيل دخول خاطىء");
                 }
 
         }

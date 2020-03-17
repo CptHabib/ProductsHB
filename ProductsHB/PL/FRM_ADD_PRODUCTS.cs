@@ -33,7 +33,7 @@ namespace ProductsHB.PL
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "ملفات الصور | *.JPG;*.PNG;*.GIF;*.BMP ";
+            ofd.Filter = "ملفات الصور | *.JPG;*.PNG;*.GIF;*.BMP;*.jpeg ";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pBox.Image = Image.FromFile(ofd.FileName);
