@@ -52,5 +52,10 @@ namespace ProductsHB.PL
         {
 
         }
+
+        private void textID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

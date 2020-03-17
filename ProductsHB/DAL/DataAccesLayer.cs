@@ -15,7 +15,7 @@ namespace ProductsHB.DAL
         public DataAccesLayer() 
         {
             //sqlconnection = new SqlConnection(@"Server=BURAK-PC\SQLEXPRESS;Database=Product.DB; Integrated Security=true");
-            sqlconnection = new SqlConnection(@"Server=.\SQLEXPRESS;Database=Product_DB; Integrated Security=true"); 
+            sqlconnection = new SqlConnection(@"Server=.;Database=Product_DB; Integrated Security=true"); 
         }
 
         //method to open the connection

@@ -55,6 +55,7 @@
             this.textID.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.textID, "textID");
             this.textID.Name = "textID";
+            this.textID.TextChanged += new System.EventHandler(this.textID_TextChanged);
             // 
             // textPWD
             // 

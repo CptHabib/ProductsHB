@@ -70,5 +70,10 @@ namespace ProductsHB.PL
             frm.ShowDialog();
 
         }
+
+        private void FRM_MAIN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
