@@ -80,7 +80,10 @@ namespace ProductsHB.PL
                 Dt = prd.VerifyProductID1(txtRef.Text);
                 if (Dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("هذا المعرف موجود مسبقا", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("هذا المعرف موجود مسبقا", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtRef.Focus();
+                    txtRef.SelectionStart = 0;
+                    txtRef.SelectionLength = txtRef.TextLength;
                 }
             }
         }
