@@ -16,5 +16,11 @@ namespace ProductsHB.RPT
         {
             InitializeComponent();
         }
+
+        private void FRM_RPT_PRODUCT_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

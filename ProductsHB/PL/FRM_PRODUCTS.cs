@@ -105,10 +105,18 @@ namespace ProductsHB.PL
             frm.ShowDialog();
         }
 
-        private void FRM_PRODUCTS_Load(object sender, EventArgs e)
+       /* private void FRM_PRODUCTS_Load(object sender, EventArgs e)
         {
 
             this.reportViewer1.RefreshReport();
+        }*/
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            RPT.rpt_prd_single myReport = new RPT.rpt_prd_single();
+            myReport.SetParameterValue("@ID", this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            RPT.FRM_RPT_PRODUCT myForm = new RPT.FRM_RPT_PRODUCT();
+            
         }
     }
 }
