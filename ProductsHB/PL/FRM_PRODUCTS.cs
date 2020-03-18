@@ -63,7 +63,7 @@ namespace ProductsHB.PL
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("هل تريد حذف المنتوج المحدد", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            if (MessageBox.Show("هل تريد حذف المنتج المحدد", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 prd.DeleteProduct(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
                 MessageBox.Show("تمت عملية الحذف بنجاح", "عملية الحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -88,7 +88,7 @@ namespace ProductsHB.PL
             frm.cmbCategories.Text = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
             frm.Text = "تحديث المنتوج :" + this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
             frm.btnOk.Text = "تحديث";
-            frm.state = "update";
+            frm.state = "update"; 
             frm.txtRef.ReadOnly = true;
             byte [] image = (byte[])prd.GET_PRODUCT_IMAGE(this.dataGridView1.CurrentRow.Cells[0].Value.ToString()).Rows[0][0];
             MemoryStream ms = new MemoryStream(image);
@@ -103,6 +103,12 @@ namespace ProductsHB.PL
             MemoryStream ms = new MemoryStream(image);
             frm.pictureBox1.Image = Image.FromStream(ms);
             frm.ShowDialog();
+        }
+
+        private void FRM_PRODUCTS_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
         }
     }
 }

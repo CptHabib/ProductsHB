@@ -141,7 +141,7 @@ namespace ProductsHB.BL
             DAL.DataAccesLayer DAL = new DAL.DataAccesLayer();
             DAL.Open();
             SqlParameter[] param = new SqlParameter[1];
-            param[0] = new SqlParameter("@ID", SqlDbType.VarChar,25);
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar,50);
             param[0].Value = ID;
 
             DAL.ExecuteCommand("DeleteProduct", param);

@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
-namespace ProductsHB.PL
+namespace ProductsHB.RPT
 {
-    public partial class FRM_PREVIEW : Form
+    public partial class FRM_RPT_PRODUCT : Form
     {
-        public FRM_PREVIEW()
+        public FRM_RPT_PRODUCT()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -58,11 +58,12 @@ namespace ProductsHB.PL
                 byte[] byteImage = ms.ToArray();
                 prd.UPDATE_PRODUCTS(Convert.ToInt32(cmbCategories.SelectedValue), txtDes.Text, txtRef.Text
                                   , Convert.ToInt32(txtQte.Text), txtPrice.Text, byteImage);
+                MessageBox.Show("تم التحديث بنجاح", "عملية التحديث", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
 
             }
 
-            MessageBox.Show("تم التحديث بنجاح", "عملية التحديث", MessageBoxButtons.OK, MessageBoxIcon.Information);
             FRM_PRODUCTS.getMainForm.dataGridView1.DataSource = prd.GET_ALL_PRODUCTS();
 
         }
