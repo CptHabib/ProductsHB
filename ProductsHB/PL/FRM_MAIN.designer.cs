@@ -38,7 +38,6 @@
             this.اضافةمنتوججديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالمنتوجاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.اضافةصنفجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالاصنافToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.العملاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.اضفةعميلجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,7 +107,6 @@
             this.اضافةمنتوججديدToolStripMenuItem,
             this.ادارةالمنتوجاتToolStripMenuItem,
             this.toolStripSeparator1,
-            this.اضافةصنفجديدToolStripMenuItem,
             this.ادارةالاصنافToolStripMenuItem});
             this.المنتوجاتToolStripMenuItem.Name = "المنتوجاتToolStripMenuItem";
             this.المنتوجاتToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
@@ -133,17 +131,12 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
             // 
-            // اضافةصنفجديدToolStripMenuItem
-            // 
-            this.اضافةصنفجديدToolStripMenuItem.Name = "اضافةصنفجديدToolStripMenuItem";
-            this.اضافةصنفجديدToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.اضافةصنفجديدToolStripMenuItem.Text = "اضافة صنف جديد";
-            // 
             // ادارةالاصنافToolStripMenuItem
             // 
             this.ادارةالاصنافToolStripMenuItem.Name = "ادارةالاصنافToolStripMenuItem";
             this.ادارةالاصنافToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.ادارةالاصنافToolStripMenuItem.Text = "ادارة الاصناف";
+            this.ادارةالاصنافToolStripMenuItem.Click += new System.EventHandler(this.ادارةالاصنافToolStripMenuItem_Click);
             // 
             // العملاءToolStripMenuItem
             // 
@@ -160,30 +153,30 @@
             // اضفةعميلجديدToolStripMenuItem
             // 
             this.اضفةعميلجديدToolStripMenuItem.Name = "اضفةعميلجديدToolStripMenuItem";
-            this.اضفةعميلجديدToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.اضفةعميلجديدToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.اضفةعميلجديدToolStripMenuItem.Text = "اضفة عميل جديد";
             // 
             // ادارةالعملاءToolStripMenuItem
             // 
             this.ادارةالعملاءToolStripMenuItem.Name = "ادارةالعملاءToolStripMenuItem";
-            this.ادارةالعملاءToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.ادارةالعملاءToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ادارةالعملاءToolStripMenuItem.Text = "ادارة العملاء";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(145, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // اضافةبيعجديدToolStripMenuItem
             // 
             this.اضافةبيعجديدToolStripMenuItem.Name = "اضافةبيعجديدToolStripMenuItem";
-            this.اضافةبيعجديدToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.اضافةبيعجديدToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.اضافةبيعجديدToolStripMenuItem.Text = "اضافة بيع جديد";
             // 
             // ادارةالمبيعاتToolStripMenuItem
             // 
             this.ادارةالمبيعاتToolStripMenuItem.Name = "ادارةالمبيعاتToolStripMenuItem";
-            this.ادارةالمبيعاتToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.ادارةالمبيعاتToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ادارةالمبيعاتToolStripMenuItem.Text = "ادارة المبيعات ";
             // 
             // المستخدمينToolStripMenuItem
@@ -242,7 +235,6 @@
         public System.Windows.Forms.ToolStripMenuItem المنتوجاتToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem اضافةمنتوججديدToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem ادارةالمنتوجاتToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem اضافةصنفجديدToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem ادارةالاصنافToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem العملاءToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem اضفةعميلجديدToolStripMenuItem;

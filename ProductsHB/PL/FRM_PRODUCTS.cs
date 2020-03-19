@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.CrystalReports;
+using CrystalDecisions.Shared;
+
 
 namespace ProductsHB.PL
 {
@@ -105,18 +109,47 @@ namespace ProductsHB.PL
             frm.ShowDialog();
         }
 
-       /* private void FRM_PRODUCTS_Load(object sender, EventArgs e)
-        {
 
-            this.reportViewer1.RefreshReport();
-        }*/
 
         private void button5_Click(object sender, EventArgs e)
         {
             RPT.rpt_prd_single myReport = new RPT.rpt_prd_single();
             myReport.SetParameterValue("@ID", this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
             RPT.FRM_RPT_PRODUCT myForm = new RPT.FRM_RPT_PRODUCT();
-            
+            myForm.crystalReportViewer1.ReportSource = myReport;
+            myForm.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            RPT.rpt_all_products myReport = new RPT.rpt_all_products();
+            RPT.FRM_RPT_PRODUCT myForm = new RPT.FRM_RPT_PRODUCT();
+            myForm.crystalReportViewer1.ReportSource = myReport;
+            myForm.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            RPT.rpt_all_products myReport = new RPT.rpt_all_products();
+            ExcelFormatOptions excelformat = new ExcelFormatOptions();
+            //crate export qptions
+            ExportOptions export = new ExportOptions();
+            //create object for destination
+            DiskFileDestinationOptions dfoptions = new DiskFileDestinationOptions();
+            //set the path of destination
+            dfoptions.DiskFileName= @"F:\المحاسبة\Program\ProductsHB\Products.xls";
+            export = myReport.ExportOptions;
+            export.ExportDestinationType = ExportDestinationType.DiskFile;
+            export.ExportFormatType = ExportFormatType.Excel;
+            export.ExportFormatOptions = excelformat;
+            export.ExportDestinationOptions = dfoptions;
+            myReport.Export();
+            MessageBox.Show("!تم حفظ اللائحة بنجاح", "تم", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

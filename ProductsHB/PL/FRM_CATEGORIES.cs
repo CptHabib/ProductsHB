@@ -8,23 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProductsHB.RPT
+namespace ProductsHB.PL
 {
-    public partial class FRM_RPT_PRODUCT : Form
+    public partial class FRM_CATEGORIES : Form
     {
-        public FRM_RPT_PRODUCT()
+        public FRM_CATEGORIES()
         {
             InitializeComponent();
         }
 
-        private void FRM_RPT_PRODUCT_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
-            
         }
 
-        private void reportViewer1_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

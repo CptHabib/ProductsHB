@@ -75,5 +75,10 @@ namespace ProductsHB.PL
         {
 
         }
+
+        private void ادارةالاصنافToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
