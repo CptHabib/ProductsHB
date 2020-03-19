@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProductsHB.PL
 {
     public partial class FRM_CATEGORIES : Form
     {
+        SqlConnection sqlcon = new SqlConnection(@"Server=.;Database=Product_DB; Integrated Security=true");
+        SqlDataAdapter da;
+        DataTable dt=new DataTable();
         public FRM_CATEGORIES()
         {
             InitializeComponent();
+            da = new SqlDataAdapter("select * from categories", sqlcon);
+            da.Fill(dt);
+            dgList.DataSource = dt;
         }
 
         private void label1_Click(object sender, EventArgs e)

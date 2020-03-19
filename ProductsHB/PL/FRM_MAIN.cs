@@ -78,7 +78,8 @@ namespace ProductsHB.PL
 
         private void ادارةالاصنافToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FRM_CATEGORIES frm = new FRM_CATEGORIES();
+            frm.ShowDialog();
         }
     }
 }
