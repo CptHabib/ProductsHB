@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtDes = new System.Windows.Forms.TextBox();
-            this.btnFirst = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
             this.btnLast = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
+            this.txtDes = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblPosition = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnNew = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgList = new System.Windows.Forms.DataGridView();
-            this.btnExport = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -70,60 +70,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات الصنف";
             // 
-            // label1
+            // btnLast
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(514, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "رقم الصنف:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(514, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "اسم الصنف:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(400, 35);
-            this.txtID.Name = "txtID";
-            this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(108, 20);
-            this.txtID.TabIndex = 2;
-            // 
-            // txtDes
-            // 
-            this.txtDes.Location = new System.Drawing.Point(235, 67);
-            this.txtDes.Multiline = true;
-            this.txtDes.Name = "txtDes";
-            this.txtDes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDes.Size = new System.Drawing.Size(273, 57);
-            this.txtDes.TabIndex = 3;
-            // 
-            // btnFirst
-            // 
-            this.btnFirst.Location = new System.Drawing.Point(479, 142);
-            this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(75, 25);
-            this.btnFirst.TabIndex = 4;
-            this.btnFirst.Text = "||<<";
-            this.btnFirst.UseVisualStyleBackColor = true;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Location = new System.Drawing.Point(398, 142);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 25);
-            this.btnPrevious.TabIndex = 4;
-            this.btnPrevious.Text = "<<";
-            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnLast.Location = new System.Drawing.Point(170, 142);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(75, 25);
+            this.btnLast.TabIndex = 4;
+            this.btnLast.Text = ">>||";
+            this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
             // 
@@ -135,14 +90,52 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnLast
+            // btnPrevious
             // 
-            this.btnLast.Location = new System.Drawing.Point(170, 142);
-            this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(75, 25);
-            this.btnLast.TabIndex = 4;
-            this.btnLast.Text = ">>||";
-            this.btnLast.UseVisualStyleBackColor = true;
+            this.btnPrevious.Location = new System.Drawing.Point(398, 142);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(75, 25);
+            this.btnPrevious.TabIndex = 4;
+            this.btnPrevious.Text = "<<";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.Location = new System.Drawing.Point(479, 142);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(75, 25);
+            this.btnFirst.TabIndex = 4;
+            this.btnFirst.Text = "||<<";
+            this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
+            // 
+            // txtDes
+            // 
+            this.txtDes.Location = new System.Drawing.Point(235, 67);
+            this.txtDes.Multiline = true;
+            this.txtDes.Name = "txtDes";
+            this.txtDes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDes.Size = new System.Drawing.Size(273, 57);
+            this.txtDes.TabIndex = 3;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(400, 35);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(108, 20);
+            this.txtID.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(514, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "اسم الصنف:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblPosition
             // 
@@ -153,6 +146,16 @@
             this.lblPosition.TabIndex = 0;
             this.lblPosition.Text = "label";
             this.lblPosition.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(514, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "رقم الصنف:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox2
             // 
@@ -168,32 +171,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "العمليات المتاحة";
             // 
-            // btnNew
+            // btnExport
             // 
-            this.btnNew.Location = new System.Drawing.Point(514, 34);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 25);
-            this.btnNew.TabIndex = 4;
-            this.btnNew.Text = "جديد";
-            this.btnNew.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(433, 34);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 25);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "إضافة";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(352, 34);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 25);
-            this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "حذف";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnExport.Location = new System.Drawing.Point(23, 34);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(242, 25);
+            this.btnExport.TabIndex = 4;
+            this.btnExport.Text = "حفظ لائحة الصنف الحالي بمنتجاته بملف PDF";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnEdit
             // 
@@ -203,6 +189,38 @@
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "تعديل";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(352, 34);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 25);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "حذف";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Enabled = false;
+            this.btnAdd.Location = new System.Drawing.Point(433, 34);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 25);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "إضافة";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(514, 34);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 25);
+            this.btnNew.TabIndex = 4;
+            this.btnNew.Text = "جديد";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // groupBox3
             // 
@@ -226,15 +244,6 @@
             this.dgList.Size = new System.Drawing.Size(583, 159);
             this.dgList.TabIndex = 0;
             // 
-            // btnExport
-            // 
-            this.btnExport.Location = new System.Drawing.Point(23, 34);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(242, 25);
-            this.btnExport.TabIndex = 4;
-            this.btnExport.Text = "حفظ لائحة الصنف الحالي بمنتجاته بملف PDF";
-            this.btnExport.UseVisualStyleBackColor = true;
-            // 
             // FRM_CATEGORIES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +252,8 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FRM_CATEGORIES";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;

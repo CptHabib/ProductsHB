@@ -40,7 +40,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.ادارةالاصنافToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.العملاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.اضفةعميلجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالعملاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.اضافةبيعجديدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -141,7 +140,6 @@
             // العملاءToolStripMenuItem
             // 
             this.العملاءToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.اضفةعميلجديدToolStripMenuItem,
             this.ادارةالعملاءToolStripMenuItem,
             this.toolStripSeparator2,
             this.اضافةبيعجديدToolStripMenuItem,
@@ -150,17 +148,12 @@
             this.العملاءToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.العملاءToolStripMenuItem.Text = "العملاء";
             // 
-            // اضفةعميلجديدToolStripMenuItem
-            // 
-            this.اضفةعميلجديدToolStripMenuItem.Name = "اضفةعميلجديدToolStripMenuItem";
-            this.اضفةعميلجديدToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.اضفةعميلجديدToolStripMenuItem.Text = "اضفة عميل جديد";
-            // 
             // ادارةالعملاءToolStripMenuItem
             // 
             this.ادارةالعملاءToolStripMenuItem.Name = "ادارةالعملاءToolStripMenuItem";
             this.ادارةالعملاءToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ادارةالعملاءToolStripMenuItem.Text = "ادارة العملاء";
+            this.ادارةالعملاءToolStripMenuItem.Click += new System.EventHandler(this.ادارةالعملاءToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -172,6 +165,7 @@
             this.اضافةبيعجديدToolStripMenuItem.Name = "اضافةبيعجديدToolStripMenuItem";
             this.اضافةبيعجديدToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.اضافةبيعجديدToolStripMenuItem.Text = "اضافة بيع جديد";
+            this.اضافةبيعجديدToolStripMenuItem.Click += new System.EventHandler(this.اضافةبيعجديدToolStripMenuItem_Click);
             // 
             // ادارةالمبيعاتToolStripMenuItem
             // 
@@ -237,7 +231,6 @@
         public System.Windows.Forms.ToolStripMenuItem ادارةالمنتوجاتToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem ادارةالاصنافToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem العملاءToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem اضفةعميلجديدToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem ادارةالعملاءToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem اضافةبيعجديدToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem ادارةالمبيعاتToolStripMenuItem;

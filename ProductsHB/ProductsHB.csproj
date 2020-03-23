@@ -56,7 +56,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\CLS_CUSTOMERS.cs" />
     <Compile Include="BL\CLS_LOGIN.cs" />
+    <Compile Include="BL\CLS_ORDERS.cs" />
     <Compile Include="BL\CLS_PRODUCTS.cs" />
     <Compile Include="DAL\DataAccesLayer.cs" />
     <Compile Include="PL\FRM_ADD_PRODUCTS.cs">
@@ -71,6 +73,18 @@
     <Compile Include="PL\FRM_CATEGORIES.Designer.cs">
       <DependentUpon>FRM_CATEGORIES.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_CUSTOMERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CUSTOMERS.Designer.cs">
+      <DependentUpon>FRM_CUSTOMERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_CUST_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_CUST_LIST.Designer.cs">
+      <DependentUpon>FRM_CUST_LIST.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +97,12 @@
     <Compile Include="PL\FRM_MAIN.designer.cs">
       <DependentUpon>FRM_MAIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_ORDERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ORDERS.Designer.cs">
+      <DependentUpon>FRM_ORDERS.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_PREVIEW.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +114,12 @@
     </Compile>
     <Compile Include="PL\FRM_PRODUCTS.designer.cs">
       <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_PRODUCTS_LIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_PRODUCTS_LIST.Designer.cs">
+      <DependentUpon>FRM_PRODUCTS_LIST.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,11 +141,23 @@
       <DependentUpon>rpt_prd_single.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RPT\rpt_single_category.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_single_category.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="PL\FRM_ADD_PRODUCTS.resx">
       <DependentUpon>FRM_ADD_PRODUCTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_CATEGORIES.resx">
       <DependentUpon>FRM_CATEGORIES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CUSTOMERS.resx">
+      <DependentUpon>FRM_CUSTOMERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_CUST_LIST.resx">
+      <DependentUpon>FRM_CUST_LIST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_LOGIN.resx">
       <DependentUpon>FRM_LOGIN.cs</DependentUpon>
@@ -127,11 +165,17 @@
     <EmbeddedResource Include="PL\FRM_MAIN.resx">
       <DependentUpon>FRM_MAIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ORDERS.resx">
+      <DependentUpon>FRM_ORDERS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_PREVIEW.resx">
       <DependentUpon>FRM_PREVIEW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_PRODUCTS.resx">
       <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_PRODUCTS_LIST.resx">
+      <DependentUpon>FRM_PRODUCTS_LIST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +196,10 @@
     <EmbeddedResource Include="RPT\rpt_prd_single.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_prd_single.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_single_category.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_single_category.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

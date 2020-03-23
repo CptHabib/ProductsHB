@@ -81,5 +81,17 @@ namespace ProductsHB.PL
             FRM_CATEGORIES frm = new FRM_CATEGORIES();
             frm.ShowDialog();
         }
+
+        private void ادارةالعملاءToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_CUSTOMERS frm = new FRM_CUSTOMERS();
+            frm.ShowDialog();
+        }
+
+        private void اضافةبيعجديدToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_ORDERS frm = new FRM_ORDERS();
+            frm.ShowDialog();
+        }
     }
 }
